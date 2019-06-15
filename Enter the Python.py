@@ -27,7 +27,7 @@ while again:
 	if yes_no == 'yes':
 		print("\nGood choice")
 		time.sleep(1)
-	else:
+	if yes_no == 'no':
 		print("\nThen I have nothing more to show you. \n")
 		time.sleep(1)
 		print("....")
@@ -56,10 +56,9 @@ while again:
 	print("and I show you how deep the console hole goes.... ")
 	time.sleep(1)
 
-	# blue is ascii art, red is random stuff
-	pill = input("\nBlue or yellow? ")
+	snake = input("\nBlue or yellow? ")
 
-	if pill == 'blue':
+	if snake == 'blue':
 		print("\nYou wake up in your bed.... ")
 		time.sleep(1)
 		print("believing whatever you want to believe....")
@@ -68,7 +67,7 @@ while again:
 		time.sleep(1)
 		input("\nPress 'enter' wake up. ")
 		exit(0)
-	else:
+	if snake == 'yellow':
 		print("\nHere is the truth. ")
 		time.sleep(1)
 		print("Nothing more. ")
@@ -89,7 +88,7 @@ while again:
 		time.sleep(0.5)
 		print('downloading TheTruth.py.jpg.exe')
 		time.sleep(1)
-	else:
+	if the_truth == 'run':
 		print("Goodbye. ")
 		time.sleep(1)
 		
@@ -104,5 +103,5 @@ while again:
 			again = False
 			print("Goodbye. ")
 			time.sleep(1)
-			input("Press 'enter' to quit. ")
+			input("Press 'enter' wake up. ")
 			exit(0)
